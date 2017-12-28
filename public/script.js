@@ -137,9 +137,9 @@ function getDisplayDate(date) {
 function createEmployeeCard(employeeDetails) {
     return `
             <div class="col-sm-4" >        
-                <div class="card" data-toggle="tooltip" title="${getDisplayDate(employeeDetails.joining_date)}"> 
+                <div class="card" "> 
                     <div class="card-body" >
-                        <h2 class="card-title">${employeeDetails.empName}</h2>
+                        <h2 class="card-title" data-toggle="tooltip" title="${getDisplayDate(employeeDetails.joining_date)}">${employeeDetails.empName}</h2>
                         <h6 class="card-subtitle mb-2 text-muted">${employeeDetails.age}</h6>                        
                         <div class="card-text">
                             <p>${employeeDetails.designation}</p>      
