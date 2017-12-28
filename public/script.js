@@ -2,7 +2,7 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = handleStateChange;
 
 var employeeList;
-const TIME_INTERVAL = 6000;
+const TIME_INTERVAL = 60000;
 
 window.onload = function () {
 
